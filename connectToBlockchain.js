@@ -7,8 +7,13 @@ async function connect(){
     // console.log(web3);
 
     const accounts = await web3.eth.getAccounts(); // fetch list of accounts
-    console.log(accounts);
-    console.log(accounts[0]);
+    // console.log(accounts);
+    // console.log(accounts[0]);
+
+    // fetching balance in gwei for a specific account
+    const getBalance= await web3.eth.getBalance(accounts[0])  // fethed the balace account at zero index
+    console.log(getBalance)
+
 
 
 }
