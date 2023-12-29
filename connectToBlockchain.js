@@ -19,6 +19,9 @@ async function connect(){
     const ethBalance = await web3.utils.fromWei(getBalance,"ether");  // convert gwei to eth
     console.log(ethBalance);
 
+    const gweiBalance = web3.utils.toWei(ethBalance,"Gwei");
+    console.log(gweiBalance);
+
 
 
 
